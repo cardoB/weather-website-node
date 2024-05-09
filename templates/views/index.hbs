@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="./images/weather-icon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p class="text">Use this site to get your weather</p>
+
+        
+        {{!-- Form riccardo --}}
+        <form class="weather-input">
+            <input type="text" placeholder="Location..." class="location-input">
+            <button class="search-button">
+                <img src="./images/search-icon.svg" alt="search">
+            </button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/client-app.js"></script>
+</body>
+
+</html>
