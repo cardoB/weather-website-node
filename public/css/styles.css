@@ -40,8 +40,8 @@ h1 {
     text-align: center;
 }
 
-.portrait {
-    width: 150px;
+.weather-image {
+    width: 350px;
 }
 
 
@@ -122,5 +122,9 @@ h1 {
     }
     .search-button {
         width: 10%;
+    }
+
+    .weather-image {
+        width: 450px;
     }
   }

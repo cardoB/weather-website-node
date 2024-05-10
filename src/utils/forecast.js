@@ -22,7 +22,10 @@ const forecast = (latitude, longitude, callback) => {
         } else if (response.body.error) {
             callback('Unable to find location', undefined)
         } else {
-            callback(undefined, `It is currently ${response.body.current.temperature}˚. It feels like ${response.body.current.feelslike}˚.`);
+            const weatherMessage = `It is currently ${response.body.current.temperature}˚. It feels like ${response.body.current.feelslike}˚. The humidity is ${response.body.current.humidity}%.`;
+            console.log(weatherMessage);
+
+            callback(undefined, weatherMessage);
         }
     })
 }
