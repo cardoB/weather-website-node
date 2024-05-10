@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...';
     
     const location = search.value;
-    const url = `/weather?address=${location}`;
+    const url = window.location.href + `weather?address=${location}`;
     search.value = '';
     
     fetch(url).then((response) => {
@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error;
             } else {
                 messageOne.textContent = data.location;
-                messageTwo.textContent += data.forecast;
+                messageTwo.textContent = data.forecast;
             }
         })
     })
