@@ -25,6 +25,10 @@ h1 {
     font-size: 2.5rem;
 }
 
+.text {
+    overflow: hidden;
+}
+
 .header-links {
     color: #888;
     margin-right: 16px;
