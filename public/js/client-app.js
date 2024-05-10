@@ -26,3 +26,16 @@ weatherForm.addEventListener('submit', (e) => {
         })
     })
 })
+
+/* 
+view the website at: 
+https://belletta-weather-application-32ed10862529.herokuapp.com
+
+to add features/make changes, commands:
+git status
+git add .
+git commit -m "message to the team"
+git push origin main 
+git push heroku main
+
+*/

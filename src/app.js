@@ -104,14 +104,14 @@ app.get('/weather', (req, res) => {
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Riccardo Belletta'
+        name: 'CardoB'
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
-        name: 'Riccardo Belletta'
+        name: 'CardoB'
     })
 });
 
@@ -120,7 +120,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         message: 'Help message',
         title: 'Help',
-        name: 'Riccardo Belletta'
+        name: 'CardoB'
     })
 });
 
@@ -128,7 +128,7 @@ app.get('/help', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Riccardo Belletta',
+        name: 'CardoB',
         errorMessage: 'Help page not found'
     })
 })
@@ -137,7 +137,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Riccardo Belletta',
+        name: 'CardoB',
         errorMessage: 'Page not found'
     })
 })
